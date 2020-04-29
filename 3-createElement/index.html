@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="root"></div>
+    <!-- Tất cả component của react sẽ được render vào bên trong div#id = root -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script>
+        const Title = React.createElement('div', {
+            className: 'title'
+        }, 'Thư viện sách của tôi');
+
+        const Book1 = React.createElement('li', null, 'Đắc nhân tâm');
+        const Book2 = React.createElement('li', null, 'Tuổi trẻ đáng giá bao nhiêu');
+        const Book3 = React.createElement('li', null, 'Tôi tài giỏi, bạn cũng thế');
+
+        const BookApp = React.createElement('ul', null, Book1, Book2, Book3)
+
+        const App = React.createElement('div', null, Title, BookApp)
+        
+        const root = document.getElementById('root'); 
+        ReactDOM.render(App, root);
+    </script>
+</body>
+</html>
