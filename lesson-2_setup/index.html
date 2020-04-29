@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    <div id="root"></div>
+    <!-- Tất cả component của react sẽ được render vào bên trong div#id = root -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script>
+        const Hello = React.createElement('div', null, 'Hello mình là cường');
+        const root = document.getElementById('root'); 
+        ReactDOM.render(Hello, root);
+    </script>
+</body>
+</html>
