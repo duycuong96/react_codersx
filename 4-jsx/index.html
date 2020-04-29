@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="main.css">
 <head>
     <meta charset="UTF-8">
 
 </head>
 <body>
+    <!-- Sử dụng React + JSX để render ra 1 thời khoá biểu của bạn (table) -->
     <div id="root"></div>
     <!-- Tất cả component của react sẽ được render vào bên trong div#id = root -->
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script>
-        const Hello = React.createElement('div', null, 'Hello mình là cường');
-        const root = document.getElementById('root'); 
-        ReactDOM.render(Hello, root);
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const Title = <div><h1>Thời khóa biểu</h1></div>
+        const Schedule = <table>
+                <tr>
+                    <th>Thứ 2</th>
+                    <th>Thứ 3</th>
+                    <th>Thứ 4</th>
+                    <th>Thứ 5</th>
+                    <th>Thứ 6</th>
+                    <th>Thứ 7</th>
+                    <th>Chủ nhật</th>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>HTML, CSS</td>
+                    <td>JavaScript</td>
+                    <td>PHP</td>
+                    <td>Laravel</td>
+                    <td>Angular</td>
+                    <td>Ngủ</td>
+                </tr>
+            </table>;
+        
+            const App = React.createElement('div', null, Title, Schedule )
+        
+            const root = document.getElementById('root'); 
+            ReactDOM.render(App, root);
     </script>
 </body>
 </html>
