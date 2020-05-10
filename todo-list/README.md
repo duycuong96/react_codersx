@@ -66,3 +66,18 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+// 1. Sử dụng create-react-app tạo 1 project như trong video
+// 2. Thử chạy: npm run build
+// 3. Thư mục mới nào được sinh ra sau khi chạy câu lệnh trên?
+// 4. Tác dụng của câu lệnh này là gì?
+// 5. Làm sao để deploy code đã build lên firebase hosting
+// Gợi ý: Không biết thì hỏi jsland hoặc slack 😎
+
+Link: https://react-todo-list-72466.web.app/
+
+1. npx create-react-app todo-list
+2. npm run build
+3. Thư mục build được sinh ra
+4. Build 
+5. firebase login - firebase init - firebase deploy
